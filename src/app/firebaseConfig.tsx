@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBZv9r3nqTvhPQc0MNHRplQLQIa3x9ATq4",
+  apiKey: process.env.NEXT_PUBLIC_apiKey,
   authDomain: "astute-being-384108.firebaseapp.com",
   databaseURL: "https://astute-being-384108-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "astute-being-384108",

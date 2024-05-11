@@ -37,7 +37,7 @@ function page() {
     const db = getFirestore(app);
     useEffect(() => {
         fetchLeadsData();
-    }, []);
+    }, [leadData]);
     async function fetchLeadsData() {
         const querySnapshot = await getDocs(collection(db, "leads"));
         const data: Object[] = [];
@@ -77,7 +77,7 @@ function page() {
             number: editForm.number,
             // test: deleteField()
         });
-        fetchLeadsData();
+        // fetchLeadsData();
     }
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

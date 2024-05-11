@@ -149,6 +149,7 @@ function page() {
                 <Table>
                     <TableHeader>
                         <TableRow>
+                            <TableHead>SR. No</TableHead>
                             <TableHead>Lead Name</TableHead>
                             <TableHead>Contact Number</TableHead>
                             <TableHead>Business Name</TableHead>
@@ -158,6 +159,7 @@ function page() {
                     <TableBody className='text-left'>
                         {leadData.map((data: any, index: any) => (
                             <TableRow key={index}>
+                                <TableCell className="font-medium">{index + 1}</TableCell>
                                 <TableCell className="font-medium">{data.name}</TableCell>
                                 <TableCell className="font-medium">{data.number}</TableCell>
                                 <TableCell className="font-medium">{data.business}</TableCell>
